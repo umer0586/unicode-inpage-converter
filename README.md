@@ -29,3 +29,5 @@ C#
   Console.WriteLine(converter.UnicodeToInpage("اسلام علیکم"));
   Console.WriteLine(converter.InpageToUnicode("’žŸ ˜ž¤œŸ"));
 ```
+
+	Note there are several bugs in current implementation which need to be fixed
