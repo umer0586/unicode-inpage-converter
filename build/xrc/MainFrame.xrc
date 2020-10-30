@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxFrame" name="MainFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>700,400</size>
+		<bg>#ffffff</bg>
+		<title></title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxMenuBar" name="MenuBar">
+			<label>MyMenuBar</label>
+			<object class="wxMenu" name="MenuMode">
+				<label>Mode</label>
+				<object class="wxMenuItem" name="MenuItemITU">
+					<label>InPage to Urdu Unicode</label>
+					<help></help>
+					<checkable>1</checkable>
+				</object>
+				<object class="wxMenuItem" name="MenuItemUTI">
+					<label>Urdu Unicode to InPage</label>
+					<help></help>
+					<checkable>1</checkable>
+				</object>
+			</object>
+			<object class="wxMenu" name="MenuHelp">
+				<label>Help</label>
+				<object class="wxMenuItem" name="MenuItemAbout">
+					<label>About</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="spacer">
+				<option>0</option>
+				<flag></flag>
+				<border>5</border>
+				<size>0,40</size>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<object class="wxTextCtrl" name="TextControl">
+					<style>wxTE_MULTILINE|wxTE_RIGHT</style>
+					<size>600,200</size>
+					<value></value>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<object class="wxButton" name="ConvertButton">
+					<size>200,50</size>
+					<font>
+						<size>11</size>
+						<family>swiss</family>
+						<style>normal</style>
+						<weight>normal</weight>
+						<underlined>0</underlined>
+						<face>Arial</face>
+					</font>
+					<label>Convert</label>
+					<default>0</default>
+					<markup>0</markup>
+					<bitmap />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="StatusBar">
+			<style>wxSTB_DEFAULT_STYLE</style>
+			<fields>4</fields>
+		</object>
+	</object>
+</resource>
